@@ -1,6 +1,8 @@
-//var
+//var --> esta manera mejor no usarla
 var helloWorld = "Hello World"
 console.log(helloWorld)
+
+
 
 //let --> la buena forma de definir variables
 let helloWorld2 = "Hello World 2"
