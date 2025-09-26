@@ -50,3 +50,5 @@ switch (day){
     }       
     
 console.log(dayName)
+
+// Video 2:24:29
