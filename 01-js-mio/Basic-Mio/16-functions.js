@@ -73,3 +73,16 @@ function extern(){
 }
 
 extern()
+
+// Funciones de orden superior
+
+function applyFunc(func, param){
+    func(param)
+}
+
+applyFunc(myFunc4, "Función de orden superior")
+
+// forEach
+
+myArray = [1,2,3,4]
+myArray.forEach((value) => console.log(value))
