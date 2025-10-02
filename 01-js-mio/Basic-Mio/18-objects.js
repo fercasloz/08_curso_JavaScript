@@ -100,3 +100,4 @@ function Person (name, age){ // debería ser una clase
 
 let person5 = new Person("Fer", 27)
 console.log(person5)
+
