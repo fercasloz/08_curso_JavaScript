@@ -99,3 +99,56 @@ class GetSetPerson {
 let person6 = new GetPerson("Fernando",27,"Fer","IBAN123456789")
 console.log(person6)
 console.log(person6.name)
+
+
+
+// Herencia de clases --> heredar propiedades y comportamiento de una clase
+
+
+class Animal{
+    constructor(name){
+        this.name = name
+    }
+
+    sound(){
+        console.log("Emite un sonido genérico")
+    }
+}
+
+class Dog extends Animal{
+    run(){
+        console.log("El perro corre")
+    }
+
+    sound(){
+        console.log("El perro ladra")
+    }
+}
+
+class Fish extends Animal{
+
+    constructor(name, size){
+        super(name)
+        this.size = size
+    }
+
+    swim(){
+        console.log("El pez nada")
+    }
+}
+
+let myDog = new Dog ("FerDog")
+myDog.run()
+myDog.sound()
+
+
+// métodos estáticos
+
+class MathOperations{
+
+    static sum(a,b){
+        return a + b
+    }
+}
+
+console.log(MathOperations.sum(5,10)) // --> al ser un metodo concreto no hace falta instanciar la clase para acceder a la suma
