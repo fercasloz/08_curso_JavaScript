@@ -104,6 +104,9 @@ switch(languageLower){
         console.log(`Bonjour on ${languageLower}`)
 }
 
+
+
+
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
