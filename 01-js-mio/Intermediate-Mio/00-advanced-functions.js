@@ -18,3 +18,4 @@ function returnGreeting() {
 processGreeting(greet, "MoureDev")
 const greet2 = returnGreeting()
 greet2("Brais Moure")
+
