@@ -99,4 +99,52 @@ const setB = new Set([2, 3, 4, 5])
 const union = new Set([...setA,...setB])
 console.log(union)
 
-// Intersección -- 1:50:53 minutos
+// Intersección 
+
+const intersection = new Set ([...setA].filter(element => setB.has(element)))
+console.log(intersection)
+
+// Diferencia
+
+const difference = new Set([...setA].filter(element => !setB.has(element)))
+console.log(difference)
+
+// Conversion
+
+console.log([...setA])
+
+
+// - Iteracción
+
+// forEach
+
+setA.forEach(element => console.log(element))
+
+// Maps avanzados
+
+let myMap = new Map([
+    ["name", "Fer"],
+    ["age", "37"]
+])
+
+myMap.forEach((value, key) => console.log(`${key}: ${value}`))
+
+// - Conversión
+
+// Mapa a Array
+
+const arrayFromMap = Array.from(myMap)
+console.log(arrayFromMap)
+
+
+// Mapa a Objeto
+
+const objectFromMap = Object.fromEntries(myMap)
+console.log(objectFromMap)
+
+
+// Objeto a Mapa
+
+const mapFromObject = new Map(Object.entries(objectFromMap))
+console.log(mapFromObject)
+
