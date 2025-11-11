@@ -131,4 +131,21 @@ step1Promise()
 
 
 
-// 3:56:20
+// - Async/Await
+
+function wait(ms){
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+async function process(){
+    console.log("Inicio del proceso")
+    await wait(5000)
+    console.log("Proceso despues de 5 segundos")
+    await wait(1000)
+    console.log("Proceso despues de 1 segundo más")
+    await wait(2000)
+    console.log("Proceso despues de 2 segundo más")
+    console.log("Fin del proceso")
+}
+
+process()
