@@ -31,3 +31,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
         // Captura los errores
         console.log("Error", error)
     })
+
+
+// 4:33:28
