@@ -32,5 +32,4 @@ fetch("https://jsonplaceholder.typicode.com/posts")
         console.log("Error", error)
     })
 
-
 // 4:33:28
